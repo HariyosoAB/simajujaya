@@ -36,7 +36,7 @@
     <div class="col-sm-4 invoice-col">
       From
       <address>
-        <strong>SI Maju Jaya</strong><br>
+        <strong>PT Maju Jaya</strong><br>
         Jl. Teknik Kimia, Keputih, Sukolilo, Kota SBY, Jawa Timur 60117<br>
         Phone: (031) 5939214
       </address>

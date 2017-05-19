@@ -10,9 +10,11 @@
       <div class="box-header with-border">
         <h3 class="box-title">Membuat Purchase Order</h3>
       </div>
-      <input type="hidden" name="" value="{{$counter=1}}">
+      <!-- <input type="hidden" name="" value="{{$counter=1}}"> -->
       <!-- /.box-header -->
       <!-- form start -->
+      <?php $counter = 1; ?>
+
       <form class="form-horizontal"  action="purchaseorder"method="post">
           <input type="hidden" name="_token" value="{{csrf_token()}}">
         <div class="box-body">
@@ -75,11 +77,12 @@
 
       window.onload = function(){
       $("#other").hide();
-      $(".barang").append('<h3 style="border-bottom:1px;">Barang #{{$counter}}</h3><div class="form-group"><div style="display:none">{{$counter=$counter+1}}</div><label for="nama_barang" class="col-sm-4 control-label">Nama Barang</label><div class="col-sm-8"><input type="text" name="nama_barang[]"class="form-control" id="nama_barang" required></div>  </div><div class="form-group"><label for="jumlah_barang" class="col-sm-4 control-label">Jumlah Barang</label><div class="col-sm-8"><input  name="jumlah_barang[]" type="text" class="form-control" id="jumlah_barang" required></div></div><div class="form-group"><label for="harga_barang"  class="col-sm-4 control-label">Harga Satuan Barang</label><div class="col-sm-8"><input type="text" name="harga_barang[]"class="form-control" id="harga_barang" required></div></div>')
+      $(".barang").append('<h3 style="border-bottom:1px;">Barang #{{$counter}}</h3><div class="form-group"><div style="display:none"></div><label for="nama_barang" class="col-sm-4 control-label">Nama Barang</label><div class="col-sm-8"><input type="text" name="nama_barang[]"class="form-control" id="nama_barang" required></div>  </div><div class="form-group"><label for="jumlah_barang" class="col-sm-4 control-label">Jumlah Barang</label><div class="col-sm-8"><input  name="jumlah_barang[]" type="text" class="form-control" id="jumlah_barang" required></div></div><div class="form-group"><label for="harga_barang"  class="col-sm-4 control-label">Harga Satuan Barang</label><div class="col-sm-8"><input type="text" name="harga_barang[]"class="form-control" id="harga_barang" required></div></div>')
       };
 
     $('#tambah').click(function(){
-      $(".barang").append('<h3 style="border-bottom:1px;">Barang #{{$counter}}</h3><div class="form-group"><div style="display:none">{{$counter=$counter+1}}</div><label for="nama_barang" class="col-sm-4 control-label">Nama Barang</label><div class="col-sm-8"><input type="text" name="nama_barang[]"class="form-control" id="nama_barang"required ></div>  </div><div class="form-group"><label for="jumlah_barang"  class="col-sm-4 control-label">Jumlah Barang</label><div class="col-sm-8"><input name="jumlah_barang[]" type="text" class="form-control" id="jumlah_barang" required></div></div><div class="form-group"><label for="harga_barang" class="col-sm-4 control-label">Harga Satuan Barang</label><div class="col-sm-8"><input name="harga_barang[]" type="text" class="form-control" id="harga_barang" required></div></div>')
+      <?php ++$counter; ?>
+      $(".barang").append('<h3 style="border-bottom:1px;">Barang #{{$counter}}</h3><div class="form-group"><div style="display:none"></div><label for="nama_barang" class="col-sm-4 control-label">Nama Barang</label><div class="col-sm-8"><input type="text" name="nama_barang[]"class="form-control" id="nama_barang"required ></div>  </div><div class="form-group"><label for="jumlah_barang"  class="col-sm-4 control-label">Jumlah Barang</label><div class="col-sm-8"><input name="jumlah_barang[]" type="text" class="form-control" id="jumlah_barang" required></div></div><div class="form-group"><label for="harga_barang" class="col-sm-4 control-label">Harga Satuan Barang</label><div class="col-sm-8"><input name="harga_barang[]" type="text" class="form-control" id="harga_barang" required></div></div>')
 
     });
 

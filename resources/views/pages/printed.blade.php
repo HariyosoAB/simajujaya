@@ -18,7 +18,7 @@
   </head>
   <body onload="window.print();">
     <!-- Main content -->
-    <section class="invoice" onload="window.print();">
+    <section class="invoice">
       <!-- title row -->
       <div class="row">
         <div class="col-xs-12">
@@ -34,7 +34,7 @@
         <div class="col-sm-4 invoice-col">
           From
           <address>
-            <strong>SI Maju Jaya</strong><br>
+            <strong>PT Maju Jaya</strong><br>
             Jl. Teknik Kimia, Keputih, Sukolilo, Kota SBY, Jawa Timur 60117<br>
             Phone: (031) 5939214
           </address>
