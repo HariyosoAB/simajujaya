@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.index');
 });
+Route::get('/purchase', function () {
+    return view('pages.print_page');
+});
+
+
+Route::get('/purchaseorder','PurchaseOrderController@showform');
+Route::get('/printpo/{id}','PrintController@printData');
+Route::post('/purchaseorder','PurchaseOrderController@insertPurchaseOrder');
