@@ -26,3 +26,4 @@ Route::get('/purchase', function () {
 Route::get('/purchaseorder','PurchaseOrderController@showform');
 Route::get('/printpo/{id}','PrintController@printData');
 Route::post('/purchaseorder','PurchaseOrderController@insertPurchaseOrder');
+Route::get('/quotation', 'QuotationController@showForm');
