@@ -24,5 +24,6 @@ Route::get('/purchase', function () {
 });
 
 Route::get('/purchaseorder','PurchaseOrderController@showform');
+Route::get('/kelolabarang','BarangController@showform');
 Route::get('/printpo/{id}','PrintController@printData');
 Route::post('/purchaseorder','PurchaseOrderController@insertPurchaseOrder');
