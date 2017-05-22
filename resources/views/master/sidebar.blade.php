@@ -53,11 +53,6 @@
             <i class="fa fa-th"></i> <span>Payment Receipt</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-th"></i> <span>Cetak Surat</span>
-          </a>
-        </li>
        <li class="header">Koor Pergudangan</li>
        <li>
           <a href="#">
@@ -72,11 +67,6 @@
         <li>
           <a href="#">
             <i class="fa fa-th"></i> <span>Mengelola Barang</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-th"></i> <span>Cetak Surat</span>
           </a>
         </li>
     </ul>
