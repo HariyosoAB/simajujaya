@@ -27,4 +27,9 @@ class BarangController extends Controller
         return view('pages.input_barang',$data);
 
     }
+    public function showTabel(){
+        $data['barang']= Barang::get();
+        return view('pages.tabel_barang',$data);
+    }
+    
 }

@@ -29,3 +29,4 @@ Route::get('/printpo/{id}','PrintController@printData');
 Route::post('/purchaseorder','PurchaseOrderController@insertPurchaseOrder');
 Route::post('/inputbarang','BarangController@submitform');
 Route::get('/quotation', 'QuotationController@showForm');
+Route::get('/tabelbarang','BarangController@showTabel');
