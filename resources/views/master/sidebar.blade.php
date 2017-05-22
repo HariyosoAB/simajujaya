@@ -65,7 +65,7 @@
           </a>
         </li>
         <li>
-          <a href="{{url('/')}}/kelolabarang">
+          <a href="{{url('/')}}/tabelbarang">
             <i class="fa fa-th"></i> <span>Mengelola Barang</span>
           </a>
         </li>
