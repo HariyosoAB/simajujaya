@@ -39,7 +39,7 @@
     <ul class="sidebar-menu">
         <li class="header">Sekretaris</li>
         <li>
-          <a href="#">
+          <a href="{{url('/')}}/quotation">
             <i class="fa fa-th"></i> <span>Quotation</span>
           </a>
         </li>

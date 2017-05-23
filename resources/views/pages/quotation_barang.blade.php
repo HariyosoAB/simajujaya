@@ -11,7 +11,12 @@
 		@foreach($client_id as $per)
 			{{$per}}
 		@endforeach
-
+		<br>
+		@foreach($barang as $row)
+			{{$row->ID_Barang}}
+			{{$row->Nama_Barang}}
+			{{$row->Harga_Barang}}
+		@endforeach
 	</div>
 	<div class="box-footer">
 

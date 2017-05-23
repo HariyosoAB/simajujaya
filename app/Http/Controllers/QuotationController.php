@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\QuotationBarang;
 use App\Client;
 use Carbon\Carbon;
+use DB;
 
 class QuotationController extends Controller
 {
@@ -19,8 +20,13 @@ class QuotationController extends Controller
     	$year = $date->year;
     	$month = $date->month;
 
+    	$barang = DB::Table('barang')->get();
+
+    	$data['barang'] = $barang;
     	$data['client_id'] = $request->client_id;
     	$data['jumlah'] = $request->input_jumlah;
+
+
 
     	return view('pages.quotation_barang', $data);
     }
