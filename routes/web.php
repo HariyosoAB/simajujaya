@@ -32,4 +32,5 @@ Route::get('/deletebarang/{id}','BarangController@submitdeleteform');
 Route::post('/purchaseorder','PurchaseOrderController@insertPurchaseOrder');
 Route::post('/inputbarang','BarangController@submitform');
 Route::get('/quotation', 'QuotationController@showForm');
+Route::get('/quotation/barang', 'QuotationController@formBarang');
 Route::get('/tabelbarang','BarangController@showTabel');
