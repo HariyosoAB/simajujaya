@@ -35,21 +35,21 @@
   				<div class="form-group">
   					<label class="control-label col-md-3">Perusahaan :</label>
   					<div class="col-md-4">
-  						<input type="text" class="form-control">
+  						<input name="perusahaan[]" type="text" class="form-control">
   					</div>
 
   				</div>
   				<div class="form-group">
   					<label class="control-label col-md-3">Alamat Perusahaan :</label>
   					<div class="col-md-4">
-  						<input type="text" class="form-control">
+  						<input name="alamat_perusahaan[]" type="text" class="form-control">
   					</div>
 
   				</div>
   				<div class="form-group">
   					<label class="control-label col-md-3">Nomor Telepon :</label>
   					<div class="col-md-4">
-  						<input type="text" class="form-control">
+  						<input name="nomor_telepon[]" type="text" class="form-control">
   					</div>
 
   				</div>
@@ -89,7 +89,7 @@
 
 			for(i = 0; i<n; i++){
 				// $("#perusahaan").append('<div class="form-group"><label class="control-label col-md-3">Nama Perusahaan '+(i+1)+' :</label><div class="col-md-4"><select class="form-control" name="client_id">@foreach($perusahaan as $per)<option value="{{$per->client_id}}">{{$per->client_nama}}</option>@endforeach<option value="other">Other</option></select></div></div>');
-				$("#perusahaan").append('<div class="form-group"><label class="control-label col-md-3">Nama Perusahaan '+(i+1)+' :</label><div class="col-md-4"><select class="form-control" name="client_id[]" onchange="otherFunction(this)" counter="'+(i+1)+'">@foreach($perusahaan as $per)<option value="{{$per->client_id}}">{{$per->client_nama}}</option>@endforeach<option value="other">Other</option></select></div></div><div id="other-'+(i+1)+'" class="well" hidden><div class="form-group"><label class="control-label col-md-3">Perusahaan :</label><div class="col-md-4"><input type="text" class="form-control"></div></div><div class="form-group"><label class="control-label col-md-3">Alamat Perusahaan :</label><div class="col-md-4"><input type="text" class="form-control"></div></div><div class="form-group"><label class="control-label col-md-3">Nomor Telepon :</label><div class="col-md-4"><input type="text" class="form-control"></div></div></div>');
+				$("#perusahaan").append('<div class="form-group"><label class="control-label col-md-3">Nama Perusahaan '+(i+1)+' :</label><div class="col-md-4"><select class="form-control" name="client_id[]" onchange="otherFunction(this)" counter="'+(i+1)+'">@foreach($perusahaan as $per)<option value="{{$per->client_id}}">{{$per->client_nama}}</option>@endforeach<option value="other">Other</option></select></div></div><div id="other-'+(i+1)+'" class="well" hidden><div class="form-group"><label class="control-label col-md-3">Perusahaan :</label><div class="col-md-4"><input name="perusahaan[]" type="text" class="form-control"></div></div><div class="form-group"><label class="control-label col-md-3">Alamat Perusahaan :</label><div class="col-md-4"><input name="alamat_perusahaan[]" type="text" class="form-control"></div></div><div class="form-group"><label class="control-label col-md-3">Nomor Telepon :</label><div class="col-md-4"><input name="nomor_telepon[]" type="text" class="form-control"></div></div></div>');
 			}
 		});
 
