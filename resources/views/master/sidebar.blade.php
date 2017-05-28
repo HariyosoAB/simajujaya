@@ -49,7 +49,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="{{url('/')}}/paymentreceipt">
             <i class="fa fa-th"></i> <span>Payment Receipt</span>
           </a>
         </li>

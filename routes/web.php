@@ -37,4 +37,9 @@ Route::get('/quotation/barang', 'QuotationController@formBarang');
 Route::get('/quotation/create', 'QuotationController@create');
 Route::get('/quotation/print', 'QuotationController@cetak');
 
+Route::get('/paymentreceipt', 'PaymentReceiptController@showForm');
+Route::post('/paymentreceipt', 'PaymentReceiptController@insertPaymentReceipt');
+Route::get('/printpr/{id}', 'PrintController@printPR');
+
+
 Route::get('/tabelbarang','BarangController@showTabel');
