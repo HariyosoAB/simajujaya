@@ -41,5 +41,10 @@ Route::get('/paymentreceipt', 'PaymentReceiptController@showForm');
 Route::post('/paymentreceipt', 'PaymentReceiptController@insertPaymentReceipt');
 Route::get('/printpr/{id}', 'PrintController@printPR');
 
+Route::get('/proofitemreceipt', 'ProofOfItemReceiptController@showForm');
+Route::post('/proofitemreceipt', 'ProofOfItemReceiptController@insertProofOfItem');
+Route::get('/printpoic/{id}', 'PrintController@printPOIC');
+
+
 
 Route::get('/tabelbarang','BarangController@showTabel');
