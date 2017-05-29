@@ -19,7 +19,7 @@
   		</div>
 
   		<div id="perusahaan">
-	  		<div class="form-group">
+	  		<!-- <div class="form-group">
 	  			<label class="control-label col-md-3">Nama Perusahaan 1 :</label>
 	  			<div class="col-md-4">
 	  				<select class="form-control" name="client_id[]" onchange="otherFunction(this)" counter="1">
@@ -53,7 +53,7 @@
   					</div>
 
   				</div>
-  			</div>
+  			</div> -->
   		</div>
   	
   </div>

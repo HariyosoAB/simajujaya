@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="box box-primary">
-	<form class="form-horizontal" action="\quotation/create">
+	<form class="form-horizontal" action="create">
 	<div class="box-header with-border">
 		<h4>Form Quotation Barang</h4>
 	</div>
