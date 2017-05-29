@@ -48,8 +48,8 @@ Route::get('/printpoirk/{id}', 'PrintController@printPOIRK');
 
 
 Route::get('/deliveryorder', 'DeliveryOrderController@showForm');
-//Route::post('/deliveryorder', 'ProofOfItemReceiptController@insertProofOfItem');
-//Route::get('/printdo/{id}', 'PrintController@printPOIC');
+Route::post('/deliveryorder', 'DeliveryOrderController@insertDeliveryOrder');
+Route::get('/printdo/{id}', 'PrintController@printDO');
 
 
 

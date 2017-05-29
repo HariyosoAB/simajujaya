@@ -46,4 +46,15 @@ class PrintController extends Controller
     $data['barang'] = DB::table("payment_receipt_barang")->join("barang","payment_receipt_barang.ID_Barang","=","barang.ID_Barang")->where("payment_receipt_barang.ID_Payment_Receipt", "=", $id)->get();
     return view('pages.poir_printed',$data);
   }
+    public function printDO($id){
+
+        $data['info'] = DB::table("delivery_order")
+            ->join("payment_receipt", "delivery_order.pr_id", "=", "payment_receipt.pr_id")
+            ->join("client", "payment_receipt.ID_Client", "=", "client.client_id")
+            ->where("payment_receipt.pr_id", "=", $id)
+            ->get();
+        $data['barang'] = DB::table("payment_receipt_barang")->join("barang","payment_receipt_barang.ID_Barang","=","barang.ID_Barang")->where("payment_receipt_barang.ID_Payment_Receipt", "=", $id)->get();
+
+        return view('pages.do_printed',$data);
+    }
 }
