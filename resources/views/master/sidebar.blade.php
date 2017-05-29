@@ -60,7 +60,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="{{url('/')}}/proofitemreceipt">
             <i class="fa fa-th"></i> <span>Proof of Item Receipt</span>
           </a>
         </li>

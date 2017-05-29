@@ -41,6 +41,7 @@ class ProofOfItemReceiptController extends Controller
         ->where("payment_receipt.pr_id", "=", $request->pr)
         ->get();
         $data['barang'] = DB::table("payment_receipt_barang")->join("barang","payment_receipt_barang.ID_Barang","=","barang.ID_Barang")->where("payment_receipt_barang.ID_Payment_Receipt", "=", $request->pr)->get();
+        //dd($data);
       }
       else {
         $data['info'] = DB::table("proof_of_item_receipt")
@@ -48,8 +49,10 @@ class ProofOfItemReceiptController extends Controller
         ->join("supplier", "purchase_order.Perusahaan_Tujuan", "=", "supplier.supplier_id")
         ->where("purchase_order.ID_Purchase_Order", "=", $request->po)
         ->get();
-        $data['barang'] = DB::table("purchase_order_barang")->where("purchase_order_barang.ID_Quotation_Barang", "=", $request->po)->get();
+        $data['barang'] = DB::table("purchase_order_barang")->where("purchase_order_barang.ID_PO", "=", $request->po)->get();
+              //  dd($data);
       }
+      $data['success'] = "berhasil membuat dokumen Proof of item receipt";
       return view('pages.poir_print',$data);
 
     }

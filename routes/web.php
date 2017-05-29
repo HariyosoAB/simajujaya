@@ -43,7 +43,8 @@ Route::get('/printpr/{id}', 'PrintController@printPR');
 
 Route::get('/proofitemreceipt', 'ProofOfItemReceiptController@showForm');
 Route::post('/proofitemreceipt', 'ProofOfItemReceiptController@insertProofOfItem');
-Route::get('/printpoic/{id}', 'PrintController@printPOIC');
+Route::get('/printpoirm/{id}', 'PrintController@printPOIRM');
+Route::get('/printpoirk/{id}', 'PrintController@printPOIRK');
 
 
 
