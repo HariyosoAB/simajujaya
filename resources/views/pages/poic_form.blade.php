@@ -8,7 +8,7 @@
     <!-- Horizontal Form -->
     <div class="box box-info">
       <div class="box-header with-border">
-        <h3 class="box-title">Membuat Payment Receipt</h3>
+        <h3 class="box-title">Membuat Proof of Item Receipt</h3>
       </div>
       <!-- <input type="hidden" name="" value="{{$counter=1}}"> -->
       <!-- /.box-header -->
