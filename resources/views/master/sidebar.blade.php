@@ -55,7 +55,7 @@
         </li>
        <li class="header">Koor Pergudangan</li>
        <li>
-          <a href="#">
+          <a href="{{url('/')}}/deliveryorder">
             <i class="fa fa-th"></i> <span>Delivery Order</span>
           </a>
         </li>
