@@ -25,10 +25,10 @@
     <!-- Sidebar user panel -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="{{url('/')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        <img src="{{url('/')}}/dist/img/avatar.png" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
-        <p>Alexander Pierce</p>
+        <p>{{Auth::user()->hak_akses}}</p>
         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
       </div>
     </div>
@@ -37,6 +37,7 @@
     <!-- /.search form -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu">
+        @if(Auth::user()->hak_akses=="sekretaris")
         <li class="header">Sekretaris</li>
         <li>
           <a href="{{url('/')}}/quotation">
@@ -53,6 +54,7 @@
             <i class="fa fa-th"></i> <span>Payment Receipt</span>
           </a>
         </li>
+        @else
        <li class="header">Koor Pergudangan</li>
        <li>
           <a href="{{url('/')}}/deliveryorder">
@@ -67,6 +69,12 @@
         <li>
           <a href="{{url('/')}}/tabelbarang">
             <i class="fa fa-th"></i> <span>Mengelola Barang</span>
+          </a>
+        </li>
+        @endif
+        <li>
+          <a href="{{url('/')}}/logout">
+            <i class="fa fa-th"></i> <span>logout</span>
           </a>
         </li>
     </ul>

@@ -12,11 +12,22 @@
 */
 
 Route::get('/', function () {
-    return view('pages.index');
+    if(Auth::check()){
+      return view('pages.index');
+    }
+    else {
+      return view('master.index');
+    }
 });
 
 Route::get('/login', function() {
-	return('login page');
+  return view('master.index');
+});
+Route::post('/login','authController@login');
+
+Route::get('/logout', function () {
+	  Auth::logout();
+    return view('master.index');
 });
 
 Route::get('/purchase', function () {
