@@ -7,7 +7,7 @@
   </div>
 
   <div class="box-body">
-  	
+
   		<div class="form-group">
   			<label class="control-label col-md-3">Jumlah Quotation :</label>
   			<div class="col-md-2">
@@ -30,7 +30,7 @@
 	  				</select>
 	  			</div>
 	  		</div>
-  			
+
   			<div id="other-1" class="well" hidden>
   				<div class="form-group">
   					<label class="control-label col-md-3">Perusahaan :</label>
@@ -55,7 +55,7 @@
   				</div>
   			</div> -->
   		</div>
-  	
+
   </div>
 
   <div class="box-footer">
@@ -70,15 +70,15 @@
 		var number = obj.getAttribute("counter");
 		console.log(obj.value);
 		if(obj.value == "other"){
-			$("#other-"+number).show();	
+			$("#other-"+number).show();
 		}
 		else{
-			$("#other-"+number).hide();	
+			$("#other-"+number).hide();
 		}
 	}
 
 	$(document).ready(function(){
-		
+
 
 		$("#btn_generate").click(function(){
 			var n = $("#input_jumlah").val();
@@ -93,7 +93,7 @@
 			}
 		});
 
-		
+
 
 	});
 </script>

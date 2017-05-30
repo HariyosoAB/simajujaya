@@ -29,7 +29,6 @@
                   @foreach($client as $cli)
                     <option value="{{$cli->client_id}}">{{$cli->client_nama}}</option>
                   @endforeach
-                  <option value="other">other</option>
             </select>
             </div>
           </div>
